@@ -1,0 +1,49 @@
+<!-- Add a container div in your HTML to display created content -->
+<div id="contentContainer"></div>
+
+<!-- Your existing HTML and script -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD App</title>
+  <link rel="stylesheet" href="crud.css" />
+  <link rel="stylesheet" href="photon.min.css" />
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">Make up</a> 
+    <ul class="navlist">
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="makeup.html">Make up</a></li>
+        <li><a href="crud.html">Top 5</a></li>
+    </ul>
+</header>
+
+  <div class="mainWrapper">
+    <h1>Top 5 Make-Up Brand</h1>
+
+    <form>
+      <div class="form-group">
+        <label>File name</label>
+        <input id="fileName" type="text" class="form-control" value="top5.txt" readonly>
+      </div>
+
+      <div class="form-group">
+        <label>Brand</label>
+        <textarea id="fileContents" class="form-control" rows="5"></textarea>
+      </div>
+    </form>
+
+    <button id="btnCreate" class="btn btn-default">Create</button>
+    <button id="btnRead" class="btn btn-default">Read</button>
+    <button id="btnUpdate" class="btn btn-default">Update</button>
+    <button id="btnDelete" class="btn btn-default">Delete</button>
+  </div>
+
+  <div id="contentContainer"></div> <!-- Container for displaying created content -->
+
+  <script src="crud.js"></script>
+</body>
+</html>

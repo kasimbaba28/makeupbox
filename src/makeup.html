@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="makeup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Serif+KR:wght@700&display=swap" rel="stylesheet">
+  <title>Make Up</title>
+</head>
+<body>
+
+	<header>
+        <a href="#" class="logo">Make up</a> 
+        <ul class="navlist">
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="makeup.html">Make up</a></li>
+            <li><a href="crud.html">Top 5</a></li>
+        </ul>
+    </header>
+
+  <div id="boxtitle"></div>
+	<center>
+  <h1>BeautyU'</h1>
+  <p>Search for your desired beauty products and decide which goes the best for you!<br> Everything is at the tip of your fingers.</p>
+
+  <p class="reminder">No results are shown if the Brand/Category are not in our database™</p>
+
+  <div id="boxsearch">
+    <div class="search">
+      <p>Type the name of a brand and a category</p>
+	
+
+      <!--user input BRAND and CATEGORY-->
+      <input type="text" class="column" placeholder="Brand" id="makeup">
+      <input type="text" class="column" placeholder="Category" id="type">
+
+      <button onclick="buttonClicked()" class="submit">Search</button>
+	</center>
+      <!--DISPLAY-->
+      <div id="box">
+        <section class="container">
+          <!-- Content of the container goes here -->
+          <div id="display"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="fetchapi.js"></script>
+</body>
+</html>
